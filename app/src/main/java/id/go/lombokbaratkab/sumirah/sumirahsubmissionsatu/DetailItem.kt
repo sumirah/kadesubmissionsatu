@@ -10,9 +10,9 @@ class DetailItem : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var itemName = intent.getStringExtra("name")
-        var itemImage = intent.getIntExtra("image",0)
-        var itemDesc = intent.getStringExtra("desc")
+        val itemName = intent.getStringExtra("name")
+        val itemImage = intent.getIntExtra("image",0)
+        val itemDesc = intent.getStringExtra("desc")
 
         val detailItem = DetailItemUI()
         detailItem.setContentView(this)
